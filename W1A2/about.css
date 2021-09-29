@@ -1,0 +1,33 @@
+body {
+    background-color:crimson
+    
+}
+h1,h2,h3{
+    color:cornflowerblue
+}
+p,li,ul,ol {
+    color:azure;
+    font-size:large;
+    
+}
+#hrry {
+ color:chartreuse
+}
+
+.npln {
+    color:darkgoldenrod
+}
+#imgsize {
+    width: 350px;
+    height: 340px;
+}
+.memo{
+    font-style: italic;
+}
+#imdb{
+    color:brown;
+    
+}
+#firsth1 {
+    font-size:xx-large;
+}

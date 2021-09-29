@@ -1,0 +1,25 @@
+.para1 {
+    background-color:turquoise;
+    text-align:center;
+    color:darkorange;
+    font-size: xx-large;
+    
+}
+.para2{
+    background-color: turquoise;
+    text-align: left;
+    color:darkorange;
+    font-size: xx-large;
+}
+#commands{
+    font-style: normal;
+    font-weight: bold;
+}
+.quotes {
+    background-color:gold;
+}
+#footer{
+    text-align:right;
+    
+    
+}
