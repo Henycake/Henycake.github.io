@@ -137,3 +137,7 @@ p#rubber,p#script,p#review1,p#review2{
 .bottom-style{
     margin-top: 62.5em;  
 }
+#backgroundcolor {
+    width: 100%;
+    background-color: #A2B964;
+}
