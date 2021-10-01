@@ -1,0 +1,58 @@
+.header {
+    display: grid;
+    background-color: violet;
+    justify-content: center;
+    font-size: xx-large;
+}
+.nav {
+    display: grid;
+    background-color: darkslategray;
+    grid-template-columns: 100px 100px 100px auto;
+    height: 50px;
+    grid-gap: 10px;
+    
+    align-items: center;
+   padding-right: 10px;
+   text-align: center;
+}
+.nav > div {
+   color:azure;
+   font-size: 28px;
+  border-right: 2px solid black;
+}
+.section {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    height: 500px;
+    
+}
+.col1{
+    background-color: lightgray;
+    padding-left: 10px;
+}
+.col2{
+    background-color:darkgray;
+    padding-left: 10px;
+}
+.col3{
+    background-color: gray;
+    padding-left: 10px;
+}
+.footer {
+    display: grid;
+    background-color:darkslategray;
+    justify-content: center;
+    font-size: xx-large;
+    height: 50px;
+}
+@media (max-width: 600px) {
+   
+    .section { 
+        display: grid;
+       
+    
+
+    }
+    .col3 {
+        order:3;
+    }
