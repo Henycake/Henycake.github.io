@@ -1,0 +1,29 @@
+div {
+    border: 1px solid black;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+#a { 
+    /* position: relative;  */
+    top: 100px;
+    height: 600px;
+}
+#b {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 600px;
+    height: 500px;
+    background-color: blanchedalmond;
+}
+#c { 
+    position: fixed; 
+    bottom: 50px;
+    right: 50px;
+}
+#o {
+    position: relative;
+    background-color: rgb(154, 163, 163);
+    margin-top: 250px;
+}
