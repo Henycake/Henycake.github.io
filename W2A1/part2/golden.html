@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="/W2A1/part2/newgoldenstyle.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <section id="container">
+       <div >MUM Goldern Dome Market:::SRM System</div>
+       <div >Products</div>
+       <div>Supplies</div>
+       <div >Hello!</div>
+       <div ><button style="font-size: larger; border-radius: 5px; border-color: aliceblue;">sign out</button></div>
+    </section>
+    <h2>New product Form</h2>
+    <form class="action">
+        <section id="formcontainer">
+            <div>
+                <Label>Product Number</Label></br>
+                <input type="text" />
+                <br><label>Name</label></br>
+                <input type="text"/>
+                <br><label>Unit Price</label></br>
+                <input type="text" placeholder="0.0" font-size="larger" pattern="^\d+(,\d{1,2})?$"/>
+            </div>
+            <div>
+                <label>Quantity in stock</label>
+               <br> <input type="text" placeholder="0"/></br>
+               <label>Supplier</label>
+               <br><input type="text" placeholder="select a supplier"/></br>
+               <lable>Date supplied</lable>
+               <br><input type="text" placeholder="yyyy-mm-dd" pattern="/^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$/"></br>
+               <br> Enter a valid Date
+
+            </div>
+        </section>
+        <section class="buttons">
+           <button>Reset</button>
+           &nbsp;
+           <button>Cancel</button>
+           &nbsp;
+           <button>Add Product</button>
+
+        </section>
+
+
+    </form> 
+
+   </div>
+</body>
+</html>

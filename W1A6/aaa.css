@@ -1,29 +1,30 @@
+.container {
+    display: grid;
+    grid-template-areas: 
+       'some text text'
+       'some here there';
+    border: 2px solid black;
+    /* justify-content: center
+     */
+       align-items: center;
+}
 div {
-    border: 1px solid black;
-    margin-left: 5px;
-    margin-bottom: 5px;
+    min-height: 100px;
+    width: 200px;
 }
-#a { 
-    /* position: relative;  */
-    top: 100px;
-    height: 600px;
+.some {
+    grid-area: some;
+    background-color: blue;
 }
-#b {
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
-    width: 600px;
-    height: 500px;
-    background-color: blanchedalmond;
+.text{
+    grid-area: text;
+    background-color: blueviolet;
 }
-#c { 
-    position: fixed; 
-    bottom: 50px;
-    right: 50px;
+.here{
+    grid-area: here;
+    background-color: burlywood;
 }
-#o {
-    position: relative;
-    background-color: rgb(154, 163, 163);
-    margin-top: 250px;
+.there {
+    grid-area: there;
+    background-color: bisque;
 }
