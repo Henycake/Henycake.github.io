@@ -15,14 +15,14 @@ class Bank {
         return account.getNumber();
     }
 
-    addSavingsAccount(interest) {
+    addSavingsaccount(interest) {
         let savingsAccount = new Account(Bank.nextNumber, interest);
         this._accounts.push(savingsAccount);
         Bank.nextNumber++;
         return savingsAccount.getNumber();
     }
 
-    addCheckingAccount(overdraft) {
+    addCheckingaccount(overdraft) {
         let checkingAccount = new Account(Bank.nextNumber, overdraft);
         this._accounts.push(checkingAccount);
         Bank.nextNumber++;

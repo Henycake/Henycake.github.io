@@ -1,6 +1,6 @@
 
 
-class SavingsAccount extends Account {
+class Savingsaccount extends Account {
     constructor(number, interest) {
         super(number);
         this.interest = interest;
