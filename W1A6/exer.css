@@ -1,0 +1,28 @@
+div {
+    border:1px solid black;
+
+}
+#a {
+    position: relative; top 500px;
+    width:600px;
+
+}
+#c {
+    position:absolute; top:0px; right:0px; width:400px;
+}
+#b{
+    position: absolute; bottom: 0px;right: 0px;
+    width: 300px;
+}
+#d{
+    position: fixed;bottom: 0px; right: 0px; width: 200px; height: 200px;
+}
+#a{
+    position: absolute; bottom: 0px; width:500px;
+}
+#e{
+    position: relative; top: 50px;
+}
+#e{
+    position: relative; top:50px;
+}

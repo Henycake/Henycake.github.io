@@ -12,7 +12,6 @@
 //     return allNames;
 
 
-
 // },{});
 //  console.log("the output"+" "+JSON.stringify(redu));
 // for(var i=0;i<5;i++){
@@ -307,28 +306,105 @@
 // var ending=document.getElementById("endbtn");
 // ending.onclick=square.stop;
 
-var x=8;
-var y=4;
-function a(n){
-    var b=function(){
-        console.log("how many");
-        console.log(this);
-        console.log("ship");
-        return "xxx";
-    };
-    console.log("love");
-    b();
-    console.log("when");
-    console.log(y);
-    if(n>0){
-        x--;
-        n*=2;
-    }
-    var y=8;
-    console.log("x:"+x+" Y:"+ y);
-    return b;
-}
-console.log("Starting");
-var f=a(x);
-console.log("I know");
-console.log(f.call({'z':50}));
+// var x=8;
+// var y=4;
+// function a(n){
+//     var b=function(){
+//         console.log("how many");
+//         console.log(this);
+//         console.log("ship");
+//         return "xxx";
+//     };
+//     console.log("love");
+//     b();
+//     console.log("when");
+//     console.log(y);
+//     if(n>0){
+//         x--;
+//         n*=2;
+//     }
+//     var y=8;
+//     console.log("x:"+x+" Y:"+ y);
+//     return b;
+// }
+// console.log("Starting");
+// var f=a(x);
+// console.log("I know");
+// console.log(f.call({'z':50}));
+// let banned="I am not understanding this";
+// String.prototype.filter=function(banned){
+// console.log("this is ");
+// let splits=this.split(" ");
+
+
+// return splits.filter(s=>s!=banned).join(" ");
+
+    
+
+// };
+// Var Words=function(){};
+
+// var Teacher=function(){};
+// Teacher.prototype=new Person();
+// Teacher.prototype.teach=function(subject){
+//     return this.name+"is now teaching"+""+this.subject;
+// }
+// var he=new Teacher();
+// he.initialize(")");
+// he.teach("ss)")
+
+// class User {
+//     constructor(name = "Anonymous") {
+//         this.name = name;
+//     }
+//     sayHi() {
+//         console.log(`Hello, ${this.name}!`);
+//     }
+// }
+// fred = new User();
+// console.log('fred: ');
+// console.log(fred);
+// console.log('fred.__proto__');
+// console.log(fred.__proto__);
+// console.log(User.prototype);
+// fred.sayHi();
+// bob = new User("Bob");
+// console.log(bob);
+// bob.sayHi();
+
+ /* closure that returns function to manage contacts */
+//  function keepContacts() {
+
+//     let contacts = [];
+ 
+//     return function (name) {
+//       let aContact = contacts.find(contact => (contact.name === name) ? true : false);
+//       if (aContact !== undefined) {
+//         return aContact.phone;
+//       } else {
+//         contacts.push({
+//           name: name,
+//           phone: prompt("Please enter phone number: ")
+//         });
+//       }
+//     }
+ 
+    
+ 
+//   }
+//   // test it
+//   const myContacts =  keepContacts();
+//   myContacts("Bill");
+//   myContacts("Bob");
+//   console.log("should find number for bill: " + myContacts("Bill"));
+ 
+  class ExtendedClock extends Clock {
+      constructor ({precision}){
+          super(template);
+          this.precision=precision;
+      }
+   start(){
+       super.start();
+       this.timer=se
+   }
+  }
