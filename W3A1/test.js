@@ -1,7 +1,4 @@
 
-
-
-
 describe("Account", function() {
 
     const account = new Account(Bank.nextNumber);
