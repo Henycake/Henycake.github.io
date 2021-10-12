@@ -1,3 +1,6 @@
+"use strict";
+
+
 
 describe("Account", function() {
 
@@ -28,20 +31,20 @@ describe("Account", function() {
 
 describe("Savings Account", function() {
 
-    let savingsaccount = new Savingsaccount(Bank.nextNumber, 0);
+    let savingsAccount = new SavingsAccount(Bank.nextNumber, 0);
 
     it("set and get interest rate for a savings account", function() {
-        savingsaccount.setInterest(2.5);
-        assert.equal(2.5, savingsaccount.getInterest());
+        savingsAccount.setInterest(2.5);
+        assert.equal(2.5, savingsAccount.getInterest());
     });
 
     it("add interest for a savings account", function() {
-        savingsaccount.deposit(100);
-        assert.equal(2.5, savingsaccount.addInterest());
+        savingsAccount.deposit(100);
+        assert.equal(2.5, savingsAccount.addInterest());
     });
 
     it("returns the account in the correct string for printing", function() {
-        assert.equal("SavingsAccount 0: balance 102.5: interest 2.5", savingsaccount.toString());
+        assert.equal("SavingsAccount 0: balance 102.5: interest 2.5", savingsAccount.toString());
     });
 
     it("adds interest at end of the month", function() {
@@ -52,19 +55,19 @@ describe("Savings Account", function() {
 
 describe("Checking Account", function() {
 
-    let checkingaccount = new Checkingaccount(Bank.nextNumber, 0);
+    let checkingAccount = new CheckingAccount(Bank.nextNumber, 0);
 
     it("set and get overdraft for a checking account", function() {
-        checkingaccount.setOverdraft(500);
-        assert.equal(500, checkingaccount.getOverdraft());
+        checkingAccount.setOverdraft(500);
+        assert.equal(500, checkingAccount.getOverdraft());
     });
 
     it("throw an error when trying to withdraw a value greater than the over draft limit", function() {
-        assert.throw(() => checkingaccount.withdraw(600), Error, "Insufficient funds");
+        assert.throw(() => checkingAccount.withdraw(600), Error, "Insufficient funds");
     });
 
     it("shows warning for negetive balance at end of the month", function() {
-        checkingaccount.withdraw(100);
+        checkingAccount.withdraw(100);
         assert.equal("Warning, low balance CheckingAccount 0: balance -100: overdraft limit 500", checkingAccount.endOfMonth());
     });
 

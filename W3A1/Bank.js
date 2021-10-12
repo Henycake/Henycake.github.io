@@ -1,5 +1,3 @@
-
-
 class Bank {
 
 
@@ -15,18 +13,18 @@ class Bank {
         return account.getNumber();
     }
 
-    addSavingsaccount(interest) {
-        let savingsaccount = new Account(Bank.nextNumber, interest);
-        this._accounts.push(savingsaccount);
+    addSavingsAccount(interest) {
+        let savingsAccount = new Account(Bank.nextNumber, interest);
+        this._accounts.push(savingsAccount);
         Bank.nextNumber++;
-        return savingsaccount.getNumber();
+        return savingsAccount.getNumber();
     }
 
-    addCheckingaccount(overdraft) {
-        let checkingaccount = new Account(Bank.nextNumber, overdraft);
-        this._accounts.push(checkingaccount);
+    addCheckingAccount(overdraft) {
+        let checkingAccount = new Account(Bank.nextNumber, overdraft);
+        this._accounts.push(checkingAccount);
         Bank.nextNumber++;
-        return checkingaccount.getNumber();
+        return checkingAccount.getNumber();
     }
 
     closeAccount(number) {
