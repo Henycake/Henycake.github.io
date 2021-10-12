@@ -16,17 +16,17 @@ class Bank {
     }
 
     addSavingsaccount(interest) {
-        let savingsAccount = new Account(Bank.nextNumber, interest);
-        this._accounts.push(savingsAccount);
+        let savingsaccount = new Account(Bank.nextNumber, interest);
+        this._accounts.push(savingsaccount);
         Bank.nextNumber++;
-        return savingsAccount.getNumber();
+        return savingsaccount.getNumber();
     }
 
     addCheckingaccount(overdraft) {
-        let checkingAccount = new Account(Bank.nextNumber, overdraft);
-        this._accounts.push(checkingAccount);
+        let checkingaccount = new Account(Bank.nextNumber, overdraft);
+        this._accounts.push(checkingaccount);
         Bank.nextNumber++;
-        return checkingAccount.getNumber();
+        return checkingaccount.getNumber();
     }
 
     closeAccount(number) {
