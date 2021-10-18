@@ -34,8 +34,8 @@ class Product{
         return products;
     }
 }
-products=[new Product(1,"Computer",12,"mac pro!"),
-new Product(2,"Books",15,"java books"),
-new Product(3,"Furniture",5,"Wooden !")
-];
+// products=[new Product(1,"Computer",12,"mac pro!"),
+// new Product(2,"Books",15,"java books"),
+// new Product(3,"Furniture",5,"Wooden !")
+// ];
 module.exports=Product;
